@@ -11,12 +11,14 @@
     "correctAnswer": 1
   },
   {
+    "id" : 2,
     "question":
       "Quel est le nom de la princesse qui dort pendant 100 ans dans un célèbre conte de fées ?",
     "answers": ["Cendrillon", "Aurore", "Blanche-neige", "Ariel"],
     "correctAnswer": 2
   },
   {
+    "id" : 3,
     "question": "Quel est le plus grand océan du monde ?",
     "answers": ["Arctique", "Indien", "Atlantique", "Pacifique"],
     "correctAnswer": 4
