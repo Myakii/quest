@@ -41,6 +41,25 @@ function DisplayQuestion() {
     const answersContainer = document.createElement("div");
     answersContainer.className = "answers";
 
+
+    // window.addEventListener('keydown', (event) => {
+    //   if (['ArrowLeft', 'ArrowRight', 'F5', 'CtrlR'].includes(event.key)) {
+    //     event.preventDefault();
+    //   }
+    // });
+
+    window.addEventListener('keydown', (event) => {
+      // Liste des touches à prévenir
+      const keysToPrevent = ['ArrowLeft', 'ArrowRight']; // creer des variables pour stoker les touches a desable
+      const isPreventRefresh = (event.key === 'F5' || (event.key === 'R' && event.ctrlKey)); // utiliser evant.key pq plus recent sinon une autre possibilité sont les keyCodes
+
+      if (keysToPrevent.includes(event.key) || isPreventRefresh) {
+        event.preventDefault();
+      }
+    });
+
+
+
     for (let i = 0; i < questions[currentQuestionIndex].answers.length; i++) {
       const answerButton = document.createElement("button");
       answerButton.textContent = questions[currentQuestionIndex].answers[i];
