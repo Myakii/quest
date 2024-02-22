@@ -21,7 +21,7 @@ const questions = [
     id: 3,
     question: "Quel est le plus grand océan du monde ?",
     answers: ["Arctique", "Indien", "Atlantique", "Pacifique"],
-    correctAnswer: 4,
+    correctAnswer: 3,
   },
 ];
 
